@@ -2,7 +2,7 @@ const key = document.getElementById("exampleFormControlInput1");
 const inputText = document.getElementById("exampleFormControlTextarea1");
 const encryptBtn = document.getElementById("ecryptBtn");
 
-const engAlphabet = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+const engAlphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 
 
 encryptBtn.addEventListener("click", () => {
@@ -22,7 +22,7 @@ encryptBtn.addEventListener("click", () => {
         if (encryptedText[i] == -1){
             finalMessage = finalMessage.concat(" ");
         } else {
-            finalMessage += engAlphabet[(encryptedText[i] + initialKey) % 26];
+            finalMessage += engAlphabet[(encryptedText[i] + initialKey) % 52];
         }
     }
 
